@@ -1,0 +1,14 @@
+.trialbtn {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 156%;
+  color: #121417;
+  background: #9fb7ce;
+  border-radius: 12px;
+  padding: 12px 48px;
+}
+
+.trialbtn:hover {
+  background: #bfd6ea;
+}

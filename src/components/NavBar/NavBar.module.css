@@ -1,0 +1,40 @@
+.link {
+  color: #121417;
+}
+
+.active {
+  color: #9fb7ce;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  gap: 24px;
+  width: 100%;
+  padding: 10px 20px;
+  z-index: 1000;
+  font-size: 24px;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.navlinks {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  gap: 12px;
+}
+
+.artista {
+  margin-left: auto;
+}
+.linkText {
+  color: #121417;
+}
+.linkText:hover {
+  color: #9fb7ce;
+}

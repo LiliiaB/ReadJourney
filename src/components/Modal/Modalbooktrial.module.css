@@ -1,0 +1,44 @@
+.mainmodal {
+  border-radius: 30px;
+  width: 599px;
+}
+.fieldset {
+  border: none;
+}
+
+.input {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+.bookbtn {
+  border-radius: 12px;
+  padding: 16px 215px;
+  width: 472px;
+  height: 60px;
+  background: #9fb7ce;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 156%;
+  color: #121417;
+  border: none;
+}
+
+.field {
+  border: 1px solid rgba(18, 20, 23, 0.1);
+  border-radius: 12px;
+  padding: 16px 382px 16px 18px;
+  margin-bottom: 12px;
+}
+
+.foto {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.fotobox {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
