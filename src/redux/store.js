@@ -1,4 +1,4 @@
-import { configureStore } from "@reduxjs/toolkit";
+/* import { configureStore } from "@reduxjs/toolkit";
 import {
   persistStore,
   persistReducer,
@@ -11,7 +11,7 @@ import {
 } from "redux-persist";
 import storage from "redux-persist/lib/storage";
 
-import { teachersReducer } from "./teachers/slice";
+import { teachersReducer } from "./books/slice";
 import authReducer from "./auth/authReducer";
 
 const authPersistConfig = {
@@ -41,3 +41,4 @@ export const store = configureStore({
 });
 
 export const persistor = persistStore(store);
+ */

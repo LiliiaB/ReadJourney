@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
+/* import { createSlice } from "@reduxjs/toolkit";
 import { fetchTeachers } from "./operations";
 
 const teachersSlice = createSlice({
@@ -29,3 +29,4 @@ const teachersSlice = createSlice({
 });
 
 export const teachersReducer = teachersSlice.reducer;
+ */

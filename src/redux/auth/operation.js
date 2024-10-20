@@ -1,4 +1,4 @@
-import { createAsyncThunk } from "@reduxjs/toolkit";
+/* import { createAsyncThunk } from "@reduxjs/toolkit";
 
 import {
   signInWithEmailAndPassword,
@@ -56,3 +56,4 @@ export const logOutThunk = createAsyncThunk(
     }
   }
 );
+ */
