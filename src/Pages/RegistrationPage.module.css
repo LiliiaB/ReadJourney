@@ -8,6 +8,7 @@ body {
   width: 335px;
   border-radius: 30px;
   background-color: #262626;
+  margin-bottom: 12px;
 }
 
 .header {
@@ -27,4 +28,8 @@ span {
 .icon {
   display: block;
   padding: 18px;
+}
+
+.iphone {
+  padding: 20px 40px;
 }

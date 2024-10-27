@@ -20,7 +20,6 @@ const RegistrationForm = () => {
         .required("Password is required"),
     }),
     onSubmit: (values) => {
-      // Handle form submission
       console.log("Form data submitted:", values);
     },
   });
