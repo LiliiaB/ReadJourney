@@ -2,8 +2,12 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 import css from "./RegistrationForm.module.css";
 import { Link } from "react-router-dom";
+import { register } from "../../redux/auth/operation";
+import { useDispatch } from "react-redux";
 
 const RegistrationForm = () => {
+  const dispatch = useDispatch();
+
   const formik = useFormik({
     initialValues: {
       name: "",
@@ -19,8 +23,15 @@ const RegistrationForm = () => {
         .min(6, "Password must be at least 6 characters")
         .required("Password is required"),
     }),
-    onSubmit: (values) => {
-      console.log("Form data submitted:", values);
+    onSubmit: (values, { resetForm }) => {
+      dispatch(
+        register({
+          name: values.name,
+          email: values.email,
+          password: values.password,
+        })
+      );
+      resetForm();
     },
   });
 

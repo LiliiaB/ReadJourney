@@ -23,7 +23,7 @@ const authSlice = createSlice({
         state.isAuthLoading = false;
         toast.success("Registration success");
       })
-      .addCase(register.pending, (state, action) => {
+      .addCase(register.pending, (state) => {
         state.isAuthLoading = true;
       })
 
@@ -41,7 +41,7 @@ const authSlice = createSlice({
         toast.success("Login successfull");
       })
 
-      .addCase(logIn.pending, (state, action) => {
+      .addCase(logIn.pending, (state) => {
         state.isAuthLoading = true;
       })
 
@@ -59,7 +59,7 @@ const authSlice = createSlice({
         toast.success("You have successfully logged out!");
       })
 
-      .addCase(logOut.pending, (state, action) => {
+      .addCase(logOut.pending, (state) => {
         state.isAuthLoading = true;
       })
 

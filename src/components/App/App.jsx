@@ -14,7 +14,7 @@ export default function App() {
         <div className="contentwrap">
           <Routes>
             <Route path="/" element={<RegistrationPage />} />
-            <Route path="/login" element={<LoginPage />} />
+            <Route path="/logIn" element={<LoginPage />} />
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </div>

@@ -1,5 +1,6 @@
 import axios from "axios";
 import { createAsyncThunk } from "@reduxjs/toolkit";
+import { toast } from "react-toastify";
 
 axios.defaults.baseURL = "https://readjourney.b.goit.study/api";
 
@@ -17,6 +18,7 @@ export const register = createAsyncThunk(
     try {
       const res = await axios.post("/users/signup", credentials);
       setAuthHeader(res.data.token);
+      toast.success(`Registration successful`);
       return res.data;
     } catch (error) {
       return thunkAPI.rejectWithValue(error.message);
@@ -29,9 +31,8 @@ export const logIn = createAsyncThunk(
   async (credentials, thunkAPI) => {
     try {
       const res = await axios.post("/users/signin", credentials);
-
       setAuthHeader(res.data.token);
-
+      toast.success(`Login successful`);
       return res.data;
     } catch (error) {
       return thunkAPI.rejectWithValue(error.message);
@@ -42,6 +43,7 @@ export const logIn = createAsyncThunk(
 export const logOut = createAsyncThunk("auth/signout", async (_, thunkAPI) => {
   try {
     await axios.post("/users/signout");
+    toast.success(`Logout successful`);
   } catch (error) {
     return thunkAPI.rejectWithValue(error.message);
   }
