@@ -13,7 +13,6 @@
     "@reduxjs/toolkit": "^2.2.7",
     "axios": "^1.7.7",
     "clsx": "^2.1.1",
-    "firebase": "^10.13.2",
     "formik": "^2.4.6",
     "lazy": "^1.0.11",
     "modal": "^1.2.0",
@@ -42,7 +41,7 @@
     "eslint-plugin-react-refresh": "^0.4.5",
     "vite": "^5.4.9"
   },
-  "description": "App for searching online language teachers",
+  "description": "App for reading online",
   "main": "vite.config.js",
   "repository": {
     "type": "git",
